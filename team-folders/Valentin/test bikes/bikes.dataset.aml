@@ -20,6 +20,7 @@ Dataset bikes {
     type: 'number'
     definition: @aql
     coalesce(count(fct_avaibility.station_code) | where(fct_avaibility.bikes_available > 40),0)
+    
     ;;
   }
   owner: 'valentin@holistics.io'
